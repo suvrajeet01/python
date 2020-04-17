@@ -34,11 +34,12 @@ print(xs[0])
 print(xs[1])
 print(xs[5])
                         #replacing values in string - strings are immutable i.e values can't be replaced or they cannot be changed
-                        #accessing a series of letter from a string
-                        #variable[starting index:ending index]
-print(xs[1:9])
-print(xs[1:13])
+print(xs[1:9])                        #accessing a series of letter from a string
+print(xs[1:13])                        #variable[starting index:ending index]
+
+
 print(xs.upper())               #changes all letters from lowercase to uppercase
+print(xs[0].upper(),xs[1:12])
 xs1 = 'UPPER CASE LETTERS'
 print(xs1.lower())              #changes all letters of a a string from uppercase to lowercase
 print(xs[-5])                   #accessing the value of a string from end
@@ -49,22 +50,22 @@ print(xs[6])
 
 fruits = ['apple', 'banana', 'grapes', 'orange']
 print(fruits)
-list = [10,20,30,2,30,10,'python','programming']
-print(list)
-print(list[2:5])                        #accessing the values using index number
-print(list[1:100])
-print([list])
-list[2] = 1000                     #updating values in the list using index number
-print(list)
-list.append(3000)                  #adding values to list using append - append adds the value at the end of the list
-list.append("iron.man")
-print(list)
-list.insert(5, 210)                    #adding values to the list using index number at any location - insert()function ; index(index, value)
-print(list)
-list1 = list
-
-print(list1.reverse)                   #reversing the list using reverse function
+list1 = [10,20,30,2,30,10,'python','programming']
 print(list1)
+print(list1[2:5])                        #accessing the values using index number
+print(list1[1:100])
+print([list1])
+list1[2] = 1000                     #updating values in the list using index number
+print(list1)
+list1.append(3000)                  #adding values to list using append - append adds the value at the end of the list
+list1.append("iron.man")
+print(list1)
+list1.insert(5, 210)                    #adding values to the list using index number at any location - insert()function ; index(index, value)
+print(list1)
+list11 = list1
+
+print(list11.reverse)                   #reversing the list using reverse function
+print(list11)
 
 #________________________________________________________________________________________________________________________________________________
 
@@ -91,7 +92,32 @@ print(courses)
 
 #________________________________________________________________________________________________________________________________________________
 
+    #tuple - ordered and unchangeable (like strings) are held ; can contain duplicate entries
 
-    #tuple
-    #set
+animals1 = (1,20,300,'lion',5000,'tiger',700,'monkey',80,'giraffe','tiger',1,300)
+print(animals1)
+
+print(animals1[2])              #tuples are indexed i.e index values can be used to access the items from the tuples
+print(animals1.count(300))      #counting duplicate values using count function
+print(animals1.count('tiger'))
+
+#________________________________________________________________________________________________________________________________________________    
+    #set - unordered / not indexed and cannot hold duplicate values
+se = {10,20,30,30,40,10,50,2,0,20,'courses','animals','courses'}
+print(se)
+    #doesnot support indexing
+#________________________________________________________________________________________________________________________________________________
     #range - for iterating through values
+r=range(0,10)
+print(r)
+
+print(list(range(11))) #prints the vales of list i.e numbers from 0 to 11
+
+
+#miscellaneous
+
+a1=[1,2,3,4]        #list
+b1={4,5,6,5,4}      #dictionary
+c = [a1 , b1]       #list with list and dictionary
+print(c)            #=> tuples and dictionaries can be embedded in a list
+print([a1,b1])
