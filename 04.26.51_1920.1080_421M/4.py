@@ -1,4 +1,5 @@
-#functions - are a block of code that performs a specific opearation on execution
+#functions - are a block or collection of code that performs a specific opearation on execution
+#functions on string
 
 phrase = "lion is the king of the jungle"  
 print(phrase)
