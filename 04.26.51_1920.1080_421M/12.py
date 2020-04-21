@@ -9,8 +9,8 @@ friends.append('Alexios')          #.append() function add items at the end and 
 friends.insert(1, 'Theranos')       #.insert function is used to add items by specifying index number
 print(friends)
 friends.remove('oscar')             #.remove function is used to delete OR remove items from the list
-print(friends)  
-friends.clear()                     #.clear() removes OR gets rid of all the items from the list 
+print(friends)
+friends.clear()                     #.clear() removes OR gets rid of all the items from the list
 print(friends)
 friends1 = ['kevin','edward' , 'george' , 'edward' , 'oscar' ,'edward' ,'tobby']
 friends1.pop()                       #pops out OR removes the last item from the list

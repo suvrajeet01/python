@@ -1,13 +1,13 @@
 #functions - are a block or collection of code that performs a specific opearation on execution
 #functions on string
 
-phrase = "lion is the king of the jungle"  
+phrase = "lion is the king of the jungle"
 print(phrase)
 
 print(phrase+'.')
 
-print(phrase.lower()+'.')   # .lower() is a function that completely converts a string into lower case letters 
-print(phrase.upper()+'.')   # .upper() is a function that completely converts a string into uppper case letters 
+print(phrase.lower()+'.')   # .lower() is a function that completely converts a string into lower case letters
+print(phrase.upper()+'.')   # .upper() is a function that completely converts a string into uppper case letters
 
 print(phrase.islower())   #.islower() function checks weather the given string is in lower case and returns a true or false value on the basis of that
 print(phrase.isupper())   #.isupper() finction checks weather the given string is in upper case and returns a boolean value i.e either true or false on the basis of that

@@ -8,4 +8,3 @@ print(max(4, 6, 9))
 print(min(2,5,9,-1,0))  #min() function returns the lowest value amongst the inputs given
 print(round(3.2))       #round() functions rounds off to the nearest value of the given number
 print(round(3.7))
-
