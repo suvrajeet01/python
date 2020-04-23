@@ -3,3 +3,12 @@ Dwight - Salesman
 Pam - Receptionist
 Michael - Manager
 Oscar - Accountant
+Tobby - Human Resources
+Kate - Customer Service
+Tom - Manager
+Tobby - Human Resources
+Kate - Customer Service
+Tom - Manager
+Tobby - Human Resources
+Kate - Customer Service
+Tom - Manager
