@@ -28,8 +28,3 @@ fruits = ['mango','grapes','apple']
 for fruit in fruits:
     print('current fruit: ',fruit)
 print('exiting loop')
-
-#nested loop - one loop inside another loop
-#program to simulate a bank ATM
-
-
