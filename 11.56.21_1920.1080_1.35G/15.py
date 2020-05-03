@@ -105,11 +105,80 @@ def pattern(n):
             print('* ',end='')
         print('\r')
     k = 2 * n - 2              #bs- blank spaces variable
-    for i in range(0,n):        #loop for outer rows
+    for i in range(0,n+1):        #loop for outer rows
         for j in range(0,k):   #loop for columns
             print(end = ' ')
         k = k - 1             #decrementing spaces
         for j in range(0,i+1):
             print('* ', end='')
+        print('\r')
+pattern(int(input('Enter a number')))
+
+#half pyramid pattern
+def pattern(n):
+    for i in range(0,n):
+        for j in range(0,i+1):
+            print('* ',end='')
+        print('\r')
+pattern(int(input('Enter a number')))
+
+#left half pyramid pattern
+def pattern(n):
+    k=2*n -2
+    for i in range(0,n):
+        for j in range(0,k):
+            print(end = ' ')
+        k = k-2
+        for j in range(0,i+1):
+            print('* ',end='')
+        print('\r')
+pattern(int(input('Enter a number')))
+
+#downward half pyramid
+def pattern(n):
+    for i in range(n,-1,-1):
+        for j in range(0,i+1):
+            print('* ', end='')
+        print('\r')
+pattern(int(input('Enter a number')))
+
+#left downward half pyramid
+
+#diamond pattern
+def pattern(n):
+    k = 2 * n - 2
+    for i in range(0,n):
+        for j in range(0,k):
+            print(end = ' ')
+        k = k - 1
+        for j in range(0,i+1):
+            print('* ',end='')
+        print('\r')
+    k = n - 2
+    for i in range(n,-1,-1):
+        for j in range(k,0,-1):
+            print(end = ' ')
+        k = k+1
+        for j in range(0,i+1):
+            print('* ',end = '')
+        print('\r')
+pattern(int(input('Enter a number')))
+
+#diamond star pattern
+for i in range(5):
+    for j in range(5):
+        if i+j==2 or i-j == 2 or i+j == 6 or j-i==2:
+            print('*',end='')
+        else:
+            print(end=' ')
+    print()
+
+#number patterns
+def pattern(n):
+    x=0
+    for i in range(0,n):
+        x +=1
+        for j in range(0,i+1):
+            print(x,end=' ')
         print('\r')
 pattern(int(input('Enter a number')))
