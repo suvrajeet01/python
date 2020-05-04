@@ -182,3 +182,101 @@ def pattern(n):
             print(x,end=' ')
         print('\r')
 pattern(int(input('Enter a number')))
+
+#pascal's triangle
+def pattern(n):
+    for i in range(0,n):
+        for j in range(0,i+1):
+            print(function(i,j),' ',end='')
+        print()
+
+def function(n,k):
+    res = 1
+    if(k>n-k):
+        k=n-k
+    for i in range(0,k):
+        res = res * (n-i)
+        res=res//(i+1)
+    return res
+pattern(int(input('Enter a number')))
+
+#half pyramid pattern with numbers
+def pattern(n):
+    x=0
+    for i in range(0,n):
+        x = x +1
+        for j in range(0,i+1):
+            print(x,end=' ')
+        print('\r')
+pattern(int(input('Enter a number')))
+
+#diamond pattern with numbers
+def pattern(n):
+    k = 2 * n - 2
+    x = 0
+    for i in range(0,n):
+        x = x + 1 
+        for j in range(0,k):
+            print(end = ' ')
+        k = k - 1
+        for j in range(0,i+1):
+            print(x,end=' ')
+        print('\r')
+    k = n - 2
+    x = 0
+    for i in range(n,-1,-1):
+        x = x +1
+        for j in range(k,0,-1):
+            print(end = ' ')
+        k = k+1
+        for j in range(0,i+1):
+            print(x,end = ' ')
+        print('\r')
+pattern(int(input('Enter a number')))
+
+#descending order pattern(also a downward half pyramid pattern)
+def pattern(n):
+    for i in range(n,0,-1):
+        for j in range(1,i+1):
+            print(j,end='')
+        print('\r')
+pattern(int(input('Enter a number')))
+
+#binary number pattern program(pyramid pattern with binary number)
+def pattern(n):
+    k = 2 * n - 2
+    for i in range(0,n):
+        for j in range(0,k):
+            print(end=' ')
+        k = k-1
+        for j in range(0,i+1):
+            print('10',end='')
+        print('\r')
+pattern(int(input('Enter a number')))
+
+#character pattern program
+#right alphabetical triangle
+def pattern(n):
+    x=65        #ascii value is taken;65 for A  
+    for i in range(0,n):
+        ch = chr(x)     #changing to character vawriable
+        x = x +1
+        for j in range(0,i+1):
+            print(ch,end= ' ')
+        print('\r')
+pattern(int(input('Enter a number')))
+
+#charater pyramid program
+def pattern(n):
+    k = 2*n -2
+    x = 65
+    for i in range(0,n):
+        for j in range(0,k):
+            print(end = ' ')
+        k = k - 1
+        for j in range(0,i+1):
+            ch = chr(x)
+            print(ch,end = ' ')
+            x = x+1
+        print('\r')
+pattern(int(input('Enter a number')))
