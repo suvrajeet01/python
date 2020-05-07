@@ -41,4 +41,16 @@ print(a())
 print(b())
 
 
-#decorator modifies the behavior of the function without modifying it permanently by wrapping another funtion and the callable function is returned as both the functions are callable.
+#decorator modifies the behavior of the function without modifying its structure permanently and by wrapping another funtion and the callable function is returned as both the functions are callable.
+#decorators are called before defintion of a function
+
+def function1(function):
+    def wrapper():
+        print('hello')
+        function()
+        print('welcome to python')
+    return wrapper
+def function2():
+    print('python')
+
+function2=function1(function2)
