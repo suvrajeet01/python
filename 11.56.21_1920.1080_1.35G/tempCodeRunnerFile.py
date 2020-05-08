@@ -1,10 +1,11 @@
+def function1(function):
+    def wrapper():
+        print('hello')
+        function()
+        print('welcome to python')
+    return wrapper
+def function2():
+    print('python')
 
-def func():
-    print('first function')
-    def funct2():
-        print('first child function')
-    def funct3():
-        print('second child function')
-    funct2()
-    funct3()
-func()
+function2=function1(function2)
+function2()

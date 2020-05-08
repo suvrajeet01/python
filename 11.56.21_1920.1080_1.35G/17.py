@@ -54,3 +54,16 @@ def function2():
     print('python')
 
 function2=function1(function2)
+function2()
+
+def function12(function121):
+    def wrapper1():
+        print('hello')
+        function121()
+        print('welcome to python')
+    return wrapper1
+@function12
+def function21():
+    print('python')
+
+function21()
