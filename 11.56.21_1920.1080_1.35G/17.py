@@ -1,7 +1,6 @@
 #decorators in python
-#first class object - everthing including the data types and function as well are treated as an object.
+#first class object(also known as a function) - everthing including the data types and function as well are treated as an object.
 #inner function - function defined inside a function
-
 
 def func1(name):
     return f"Hello {name}"
@@ -13,7 +12,7 @@ def func3(func4):
 print(func3(func1))
 print(func3(func2))
 
-
+#using simplae decorator in python
 #using multiple functions insise a function
 def func():
     print('first function')
@@ -26,6 +25,7 @@ def func():
 func()
 
 #some more s***
+#returning function from a function
 def fc(n):
     def fc1():
         return 'python'
@@ -45,17 +45,18 @@ print(b())
 #decorators are called before defintion of a function
 
 def function1(function):
-    def wrapper():
+    def wrapper():              #decorator here
         print('hello')
         function()
         print('welcome to python')
     return wrapper
 def function2():
-    print('python')
+    print('python vs java')
 
-function2=function1(function2)
+function2=function1(function2)      #wrapper statement
 function2()
 
+#decorators using py syntax OR syntactic sugar
 def function12(function121):
     def wrapper1():
         print('hello')
@@ -64,6 +65,6 @@ def function12(function121):
     return wrapper1
 @function12
 def function21():
-    print('python')
+    print('python vs java')
 
 function21()
