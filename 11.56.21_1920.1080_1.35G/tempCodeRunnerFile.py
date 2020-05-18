@@ -1,11 +1,12 @@
-def function1(function):
-    def wrapper():
-        print('hello')
-        function()
-        print('welcome to python')
-    return wrapper
-def function2():
-    print('python')
+import numpy as np
+from matplotlib import pyplot as plt
+import seaborn as sb
+def s(flip = 2):
+    x=np.linspace(0,14,100)
+    for i in range(1,10):
+        yield(plt.plot(x,np.sin(x+i*.5)*(7-i)*flip))
 
-function2=function1(function2)
-function2()
+sb.set()
+s=s()
+plt.show()
+print(next(s))
